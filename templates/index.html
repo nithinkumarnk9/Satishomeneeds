@@ -1,0 +1,254 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SATISHOMENEEDS</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <style>
+        navbar {
+        font-family: Roboto;
+        color : black;
+        }
+        body {
+        background-color: #E0FFFF;
+        }
+        .img-right {
+        max-width: 100%; */ Ensure the image is responsive */
+        height: auto;
+        }
+        h1 {
+        padding-left: 500px;
+        font-family: Georgia;
+        }
+        h2 {
+        padding-left: 500px;
+        font-family: Clarendon;
+        color: black;
+        }
+        h4 {
+        padding-left: 700px;
+        font-family: Times New Roman;
+        text-size: 30px;
+        }
+        h3 {
+        font-family: verdana;
+        }
+        h5 {
+        font-family: Roboto;
+        }
+        .card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+        .zoom-hover {
+        transition: transform 0.2s ease;
+        }
+        .zoom-hover:hover {
+        transform: scale(0.9);
+        }
+        .divider {
+        border-top: 2px solid #000; /* Adjust color and thickness */
+        margin: 20px 0; /* space above and below the line */
+        }
+        .footer {
+        background-color: #f8f9fa;
+        color: black;
+        }
+    </style>
+    <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light font-family:Courier New;">
+        <div class="container-fluid">
+           <a class="navbar-brand" href="{{ url_for('home') }}">SATISHOMENEEDS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">HOME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container-fluid m-3">
+            <h2> WELCOME TO SATISHOMENEEDS</h2>
+            <div class="d-flex justify-content-center">
+            <a href="https://www.satishomeneeds.in/" class="btn btn-primary">ORDER NOW</a>
+                <div class="divider">
+                </div>
+                </div>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-fluid">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwPWn7q6Z0uehQiQOsv9dfmuKSUmknjbo2-fbhHaYPC5IU7b1Y5aKW1VbJTsvh2aRbc7reESnccJReVKh4ouf5lCVYnDY4-4Ai-zIpIxrm_CjdXo-YRSh17FWx6kEeN6QUYW7MIRqvP3d3zAgToVy2Bw0_WDYqP94dSiTKBnP4w2F41_peyNarVtjEJCAz/s1004/1000087899.png" style="width: 1500px; height: 500px;" class="img-fluid zoom-hover" alt="Hero Image" class="img-left">
+        <div class="divider">
+        </div>
+        </div>
+    </section>
+ <!-- About Section -->
+  <section id="about" class="about">
+      <div class="container">
+          <div class="row">
+              <div class="container-fluid m-3">
+                  <h1>About Me</h1>
+                  <div class="centre">Welcome to [Satishomeneeds], your ultimate destination for premium food products. From farm-fresh fruits and vegetables to gourmet snacks and baked goods, we specialize in delivering top-quality ingredients and delicious treats. Our curated selection ensures that you have access to the finest flavors and nutrition for every meal. Experience the convenience and excellence of [Satishomeneeds]where every product is chosen with care to satisfy your culinary needs.ORDER NOW</div>
+              <div class="divider">
+              </div>
+                  </div>
+          </div>
+      </div>
+  </section>
+
+     <!-- Services Section -->
+  <h4>--OUR SERVICES--</h4>
+  <div class="container px-4">
+  <div class="row gx-5">
+    <div class="col-md-4 mb-3">
+      <div class="card card-1 p-3 bg-primary text-white">
+        <h3>FRUITS</h3>
+        <p> Baiganapali Ambo, Akhurasa Amba, Subrana Rekha, Kajra Panisha kalimbi Achar Ambo, Gossery Ambo, Nilambari Mango, Guava, Pomegranate, Orange, Black&Red Grapes, Sugar Apple, Dragon fruits, Apple, Watermelon, Small&Big Green Coconut, Small&Big Banana</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card card-2 p-3 bg-danger text-white">
+        <h3>VEGETABLES</h3>
+        <p>Ladies Finger, Black Brinjal, Brinjal, Cabbage, Cauliflower, Papaya, Ridge Gourd, Bitter Gourd, Button Mushroom, Potato, Onion </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card card-3 p-3 bg-success text-white">
+        <h3>AQUA WATER</h3>
+        <p>Aqua Mineral Water Can, Biselri 300ml Small Water, Dispener, Water Tanker, Aquagurd Pure Aquagurd Smart, Aquagaurd Ritz, Aquaguard Cooper Zinc Booster, Aquaguard All Type Maintaince Biseri Water Bottle </p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container px-4">
+  <div class="row gx-5">
+    <div class="col-md-4 mb-3">
+      <div class="card card-4 bg-info text-white p-3">
+        <h3>BIRYANI VEG & NON VEG</h3>
+        <p>Chicken Biryani, Mix Veg Biryani Large Pack, Veg Dum Biryani Medium Pack, Mutton Special Biryani, Mashroom Paneer, Veg Pulao Medium Pack, Prawn Biryani, Leg Chicken Biryani</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-5 p-3 bg-secondary text-white">
+        <h3>STREET FOOD CORNER</h3>
+        <p>Special Egg Roll, Double Egg Roll, Double Egg Chicken Roll, Chicken Leg Pakoda, Chicken Pakoda, Single Egg Chicken, Single Egg Chowin, Double Egg Chowin, Double Egg Chicken Chowin, Veg Tadka, Chicken Soup, Egg Tadka, Chicken Egg Tadka</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-6 bg-info text-white p-3">
+        <h3>FRIES MAN</h3>
+        <p>Golden French Fries, Peri Peri French Fries, Cheese French Fries, Tandoori Fries, Veg Sandwich, Paneer Sandwich, Mushroom Sandwich, Mix Sandwich, Veg Warps, Paneer Wasps, Fish Finger, Cripsy Prawn, Chicken Finger, Cripsy Chicken</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container px-4">
+  <div class="row gx-5">
+    <div class="col-md-4 mb-3">
+      <div class="card card-7 bg-dark text-white p-3">
+        <h3>HOME NEEDS MALL</h3>
+        <p>Invetor Battery, Panasonic LED Light, Panasonic LED Panel Light, Panasonic LED Rope Light, Panasonic Street LED Light, Helogin Light, Battern Light, Stainless Steel Spoon, Home Ninja Toilet Cleaner, Home Ninja Dish Wash, Drinking Pet Bottle. </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-2 p-3">
+        <h3>COW MILK & CURD</h3>
+        <p>Desi Cow Milk, Jarsi Cow Milk, Heritage Toned Milk, Pragati Curd, Vishkha Cream Milk </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-3 p-3 bg-warning text-white">
+        <h3>BBS PIZZA/PIZZA CORN</h3>
+        <p>Veg Loaded Pizza, Double Cheese Pizza, Chicken Pizza, Peri Peri Chicken Pizza, Chicken Kheema Pizza, Spicy Paneer Pizza, Classic Pizza, Onion Pizza, Golden Corn Pizza, Mushroom Pizza.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container px-4">
+  <div class="row gx-5">
+    <div class="col-md-4 mb-3">
+      <div class="card card-1 p-3 bg-danger text-white">
+        <h3>HOTEL/FOOD CENTER</h3>
+        <p>Hotel Bhupati Odisha, Maa Kalua Odisha, Street Veg Fast Food Center, Santoshi Hotel Odisha, Hotel Nandhan, Hotel Dalema, QUENCHY PARLOUR, Hotel Radha, Sree Dinner Time, Sara Chicken, The Momo Wala, City Food Center, OASIS SHAWARMA, Nandhan International, Girija Restaurant, Hotel Mahadev. </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-2 p-3 bg-info text-white">
+        <h3>ANAND SWEETS</h3>
+        <p>Sweet Salat, Carrot Halwa, Chena Poda, Red Lodu, Chhena Mitch, Gulab Jam, Kala Jam, Malai Chup Sweets, Ras Kadam, Khoya Pista Barfi, Kaju Barfi, Kalkan Sweet, Raja Bhoga Sweet, Rasagola Kesri, Red Bundi, Maysore Pak Sweet, Slide Sweet, Balasa, Red Gol Sweets, Kaju Dry Sweets, Satapuri Sweets. </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-3 p-3 bg-secondary text-white">
+        <h3>UTKAL BAKERY</h3>
+        <p>Red Valvet Cake, StrawBerry Cake, Chocolate Cake, Black Forest Cake, Blue Berry Ice Cake, Burns, Brown Bread, Sandwich Bread, Sweet Fruit Bread, Coconut Bread, Pav Bun Full Pack. </p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="divider">
+    </div>
+<!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3 class="text-center">CONTACT US</h3>
+            <div class="row">
+                <div class="col-lg-8 ms-auto">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                        </div>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </form>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+         <div class="container text-center">
+            <h5>VISIT US</h5>
+             <p>Patita Paban Nagar 5th line Andhapasara Road Berhampur, Odisha, 760003</p>
+            <p>Email: <a href="mailto:satishachary93@gmail.com">satishachary93@gmail.com</a></p>
+            <p>Phone : +91:9090786108</p>
+        </div>
+        <div class="container text-center">
+            <p>&copy; 2024 SATISHOMENEEDS. All Rights Reserved.</p>
+        </div>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core/@2.5.2/dist/umd/popper.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.css"></script>
+    </body>
+    </html>
